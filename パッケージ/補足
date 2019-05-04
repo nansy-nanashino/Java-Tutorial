@@ -1,0 +1,13 @@
+階層を用意する場合上階層（今回だとjava）
+を中心としてパッケージをつける
+java/com/test/myapp/model
+myappの下層にMyApp（メインとなる）
+modelの下層にMyAppに繋げるファイルを（今回はAdminUser.User）
+それぞれ上部に書くpackageによって入れる場所内容が変わる
+
+今回の場合
+java com.test.myapp.MyApp.java
+MyApp :com.test.myapp
+(メインとなるMyAppにはクラスの入っているpackageもimportとしてかく)
+User :com.test.myapp.model
+AdminUser :com.test.myapp.model
